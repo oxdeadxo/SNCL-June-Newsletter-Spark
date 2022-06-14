@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    <title>SNCL June Newsletter</title>
+    <style>* {
+        margin: 0;
+    }
+    
+    body {
+        font-family: 'Raleway', sans-serif;
+        background-color: #f6f7f1;
+    }
+    
+    h1 {
+        font-size: 0.8rem;
+        color: #3f5a97;
+        line-height: 1.2rem;
+    }
+    
+    h4 {
+        font-size: 0.6rem;
+        line-height: 1.2rem;  
+    }
+    
+    h3 {
+        font-size: 0.6rem;
+        line-height: 1.2rem;
+    }
+    
+    p {
+        font-size: 0.5rem;
+        line-height: 0.8rem;
+    }
+    
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #c9c9c9;
+        margin: 0 15px 0 15px;
+    }
+    
+    .fade {
+        height: 20vh;
+        background-image: linear-gradient(to right, #e5f4fb, #418fc9);
+        margin: 0 15px 0 15px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex: 1 1;
+    }
+    
+    .fade img {
+        width: 80px;
+    }
+    
+    .fade h1 {
+        font-size: 0.7rem;
+    }
+    
+    .hoja-1 {
+        margin: 0 15px 0 15px; 
+        background-color: white;
+        padding: 10px 15px;
+    }
+    
+    .hoja-2 {
+        margin: 0 15px 0 15px; 
+        background-color: white;
+        padding: 10px 15px;
+    }
+    
+    .uno{
+        background-color: #d9ecfd; 
+    }
+    
+    .tablota {
+        text-align: center;
+        font-size: 0.5rem;
+        margin: 20px auto;
+        width: 200px;
+    }
+    
+    .tablota td {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    
+    .hoja-3 {
+        margin: 0 15px 0 15px; 
+        background-color: white;
+        padding: 10px 15px; 
+    }
+    
+    .hoja-4 {
+        margin: 0 15px 0 15px; 
+        background-color: white;
+        padding: 10px 15px; 
+    }
+    
+    .elboton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    
+    .botonera {
+        border: none;
+        color: white;
+        font-size: 0.6rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-weight: bolder;
+        width: 200px;
+        background-color: rgba(65, 142, 201, 1);
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 0 #3f5a97;
+        transition: ease-out 0.4s;
+        outline: none;
+    }
+    
+    .botonera:hover {
+        box-shadow: inset 200px 0 0 0 #3f5a97;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .imz {
+        display: flex;
+        margin: auto;
+        padding-right: 20px;
+    }
+    
+    .imz_uno {
+        list-style-type: none;
+        display: list-item;
+        margin: 0 auto;
+    }
+    
+    .imz_uno li{
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .imz_uno img{
+        width: 10px;
+        display: inline-block;
+        margin: auto;
+    }
+    
+    .imz_uno a{
+        font-size: 0.5rem;
+    }
+    
+    .iconos {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-top: 10px;
+    }
+    
+    .ul_uno {
+        padding-left: 65px;
+    }
+    
+    .iconos li {
+        font-size: 0.5rem;
+    }
+    
+    .iconos ul {
+        list-style-type: none;
+        font-size: 0.2rem;
+    }
+    
+    .ultima_lista {
+        padding-top: 20px;
+        padding-left: 5px;
+        padding-bottom: 60px;
+    }
+    
+    .ultima_lista li {
+        font-size: 0.4rem;
+    }
+    
+    .cover_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cover_img .cover {
+        width: 230px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .hoja-5 {
+        margin: 0 15px 0 15px; 
+        background-color: white;
+        padding: 10px 15px; 
+    }
+    
+    .hoja-5 h4{
+        text-align: center;
+        font-size: .5rem;
+    }
+    
+    .hoja-6 {
+        margin: 0 15px 0 15px; 
+        background-color: white;
+        padding: 10px 15px;
+    }
+    
+    .finale {
+        margin: 0 15px 0 15px;
+        background-color: #47515e;
+    }
+    
+    .para_finale {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logos_redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding-top: 15px;
+    }
+    
+    .fa-color1 {
+        color: white;
+        padding-right: 10px;
+    }
+    
+    .fa-color2 {
+        padding-left: 10px;
+        color: white;
+    }
+    
+    @media (min-width: 375px) {
+        .fade {
+            height: 15vh;
+            background-image: linear-gradient(to right, #e5f4fb, #418fc9);
+            margin: 0 20px 0 20px; 
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex: 1 1;
+        }
+    
+        .hoja-1, .hoja-2, .hoja-3, .hoja-4, .hoja-5, .hoja-6, .finale {
+            margin: 0 20px 0 20px;
+            padding: 15px 20px;
+        }
+    
+        hr {
+            margin: 0 20px 0 20px;
+        }
+    
+        .imz {
+            display: flex;
+            margin: auto;
+        }
+    
+        .ultima_lista {
+            padding-top: 20px;
+            padding-left: 0;
+            padding-bottom: 60px;
+        }
+        
+        .ultima_lista li {
+            font-size: 0.4rem;
+        }
+    }
+    
+    @media (min-width: 425px) {
+        .fade {
+            height: 20vh;
+            background-image: linear-gradient(to right, #e5f4fb, #418fc9);
+            margin: 0 30px 0 30px; 
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex: 1 1;
+        }
+    
+        .fade img{
+            width: 30%;
+        }
+    
+        .hoja-1, .hoja-2, .hoja-3, .hoja-4, .hoja-5, .hoja-6, .finale {
+            margin: 0 30px 0 30px;
+            padding: 20px 25px;
+        }
+    
+        hr {
+            margin: 0 30px 0 30px;
+        }
+    
+        .imz {
+            display: flex;
+            margin: auto;
+        }
+    
+        .ultima_lista li {
+            font-size: 0.5rem;
+        }
+    
+        .hoja-5 h4{
+            text-align: center;
+            font-size: .7rem;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .fade {
+            height: 30vh;
+            margin: 0 50px 0 50px; 
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex: 1 1;
+        }
+    
+        .fade h1 {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+        }
+    
+        .hoja-1, .hoja-2, .hoja-3, .hoja-4, .hoja-5, .hoja-6, .finale {
+            margin: 0 50px 0 50px;
+            padding: 30px 35px;
+        }
+    
+        hr {
+            margin: 0 50px 0 50px;
+        }
+    
+        h1 {
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+        }
+    
+        h3 {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
+    
+        h4 {
+            font-size: 1.4rem;
+            line-height: 2.2rem;  
+        }
+    
+        p {
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+        }
+    
+        .tablota {
+            font-size: 0.8rem;
+            width: 400px;
+        }
+    
+        .tablota td {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    
+        .botonera {
+            border: none;
+            color: white;
+            font-size: 0.8rem;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-weight: bolder;
+            width: 350px;
+            background-color: rgba(65, 142, 201, 1);
+            border-radius: 4px;
+            box-shadow: inset 0 0 0 0 #3f5a97;
+            transition: ease-out 0.4s;
+            outline: none;
+        }
+        
+        .botonera:hover {
+            box-shadow: inset 350px 0 0 0 #3f5a97;
+            cursor: pointer;
+            color: white;
+        }
+    
+        .iconos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .iconos li {
+            font-size: 0.8rem;
+            line-height: 2rem;
+        }
+    
+        .imz {
+            display: flex;
+            margin: auto;
+            padding-top: 20px;
+        }
+        
+        .imz_uno {
+            list-style-type: none;
+            line-height: 1.5rem;
+        }
+        
+        .imz_uno img{
+            width: 20px;
+        }
+        
+        .imz_uno a{
+            font-size: 1rem;   
+        }
+    
+        .ultima_lista {
+            padding-top: 25px;
+        }
+        
+        .ultima_lista li {
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+        }
+    
+        .cover_img .cover {
+            width: 450px;
+        }
+    
+        .pendejada {
+            font-size: 1rem;
+        }
+    
+        .hoja-5 h4{
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .fade {
+            margin: 0px 75px 0 75px;
+        }
+    
+        .fade img{
+            width: 25%;
+        }
+    
+        .fade h1 {
+            font-size: 2rem;
+            line-height: 2.3rem;
+        }
+    
+        .hoja-1, .hoja-2, .hoja-3, .hoja-4, .hoja-5, .hoja-6, .finale {
+            margin: 0px 75px 0 75px;
+            padding: 40px 45px;
+        }
+    
+        p {
+            font-size: 1rem;
+            line-height: 2rem;
+        }
+    
+        h1 {
+            font-size: 2.3rem;
+            line-height: 2.5rem;
+        }
+    
+        h3 {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+    
+        h4 {
+            font-size: 1.8rem;
+        }
+    
+        hr {
+            margin: 0px 75px 0 75px;
+        }
+    
+        .tablota {
+            font-size: 1rem;
+            width: 450px;
+        }
+    
+        .tablota td {
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+    
+        .botonera {
+            font-size: 1.3rem;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            width: 400px;
+        }
+        
+        .botonera:hover {
+            box-shadow: inset 400px 0 0 0 #3f5a97;
+        }
+    
+        .imz {
+            display: flex;
+            margin: auto;
+            padding-top: 25px;
+        }
+    
+        .imz_uno {
+            line-height: 2rem;
+        }
+    
+        .imz_uno a{
+            font-size: 1.2rem;   
+        }
+    
+        .iconos li {
+            font-size: 1.2rem;
+            line-height: 3rem;
+        }
+    
+        .ultima_lista {
+            padding-top: 30px;
+        }
+        
+        .ultima_lista li {
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+        }
+    
+        .cover_img .cover {
+            width: 480px;
+        }
+    
+        .pendejada {
+            font-size: 1.2rem;
+        }
+    
+        .finale {
+            margin: 0px 75px 0 75px;  
+        }
+    
+        .hoja-5 h4{
+            text-align: center;
+            font-size: 1.3rem;
+        }
+    }
+    
+    @media (min-width: 1440px) {
+        .fade {
+            margin: 0px 90px 0 90px;
+        }
+    
+        .fade h1 {
+            font-size: 2.4rem;
+            line-height: 2.5rem;
+        }
+    
+        .hoja-1, .hoja-2, .hoja-3, .hoja-4, .hoja-5, .hoja-6, .finale {
+            margin: 0px 90px 0 90px;
+            padding: 60px 65px;
+        }
+    
+        p {
+            font-size: 1.5rem;
+            line-height: 2.3rem;
+        }
+    
+        h1 {
+            font-size: 2.8rem;
+            line-height: 3rem;
+        }
+    
+        h3 {
+            font-size: 2.2rem;
+            line-height: 3rem;
+        }
+    
+        h4 {
+            font-size: 2.2rem;
+            line-height: 3rem;
+        }
+    
+        hr {
+            margin: 0px 90px 0 90px;
+        }
+    
+        .tablota {
+            font-size: 1.4rem;
+            width: 600px;
+        }
+    
+        .tablota td {
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+    
+        .botonera {
+            font-size: 1.7rem;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 550px;
+        }
+        
+        .botonera:hover {
+            box-shadow: inset 550px 0 0 0 #3f5a97;
+        }
+    
+        .imz {
+            display: flex;
+            margin: auto;
+            padding-top: 30px;
+        }
+    
+        .imz_uno {
+            line-height: 2.5rem;
+        }
+    
+        .imz_uno img {
+            width: 35px;
+        }
+    
+        .imz_uno a{
+            font-size: 1.8rem;   
+        }
+    
+        .iconos li {
+            font-size: 1.5rem;
+            line-height: 3.5rem;
+        }
+    
+        .ultima_lista {
+            padding-top: 45px;
+        }
+        
+        .ultima_lista li {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    
+        .cover_img .cover {
+            width: 600px;
+        }
+    
+        .pendejada {
+            font-size: 1.5rem;
+        }
+    
+        .finale {
+            margin: 0px 90px 0 90px;  
+        }
+    
+        .hoja-5 h4{
+            text-align: center;
+            font-size: 1.8rem;
+        }
+    }
+    
+    @media (min-width: 2560px) {
+        .fade {
+            margin: 0px 150px 0 150px;
+        }
+    
+        .fade h1 {
+            font-size: 4.5rem;
+            line-height: 5.5rem;
+        }
+    
+        .hoja-1, .hoja-2, .hoja-3, .hoja-4, .hoja-5, .hoja-6, .finale {
+            margin: 0px 150px 0 150px;
+            padding: 105px 110px;
+        }
+    
+        p {
+            font-size: 3.2rem;
+            line-height: 5rem;
+        }
+    
+        h1 {
+            font-size: 5.5rem;
+            line-height: 6rem;
+        }
+    
+        h3 {
+            font-size: 4rem;
+            line-height: 6rem;
+        }
+    
+        h4 {
+            font-size: 4rem;
+            line-height: 6rem;
+        }
+    
+        hr {
+            margin: 0px 150px 0 150px;
+        }
+    
+        .tablota {
+            font-size: 3rem;
+            width: 1100px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+        }
+    
+        .tablota td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    
+        .botonera {
+            font-size: 3rem;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 1100px;
+        }
+        
+        .botonera:hover {
+            box-shadow: inset 1100px 0 0 0 #3f5a97;
+        }
+    
+        .imz {
+            display: flex;
+            margin: auto;
+            padding-top: 35px;
+        }
+    
+        .imz_uno {
+            line-height: 5.5rem;
+        }
+    
+        .imz_uno img{
+            width: 50px;
+        }
+    
+        .imz_uno a{
+            font-size: 3.5rem;   
+        }
+    
+        .iconos li {
+            font-size: 3rem;
+            line-height: 6rem;
+            padding-top: 50px;
+        }
+    
+        .ultima_lista {
+            padding-top: 70px;
+        }
+        
+        .ultima_lista li {
+            font-size: 3rem;
+            line-height: 4.5rem;
+        }
+    
+        .cover_img .cover {
+            width: 1000px;
+        }
+    
+        .pendejada {
+            font-size: 2.5rem;
+        }
+    
+        .finale {
+            margin: 0px 150px 0 150px;  
+        }
+    
+        .hoja-5 h4{
+            text-align: center;
+            font-size: 3.5rem;
+        }
+    }</style>
+    <script src="https://kit.fontawesome.com/3373b1a783.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <!--Encabezado-->
+    <div class="fade">
+        <img src="SNCL Transp.png" alt="LOGO">
+        <h1 style="color: white;" class="text-logo">Syndicat National<br>des Collèges et des Lycées</h1>
+    </div>
+
+    <!--Primera hoja-->
+    <div class="hoja-1">
+        <h1>SNCL INFOS</h1>
+        <br> 
+        <h3>Grand Oral… et grande arnaque ! </h3>
+        <p>Ordres de missions très vagues, journées interminables, pauses déjeuner non respectées, bénévolat en soirée pour
+            saisir les notes : les professeurs embarqués dans l’organisation et la correction du grand oral en sont pour leurs
+            frais… Et ce n’est pas peu dire. Déjà lors de la session 2021, nous avions été témoins de la légèreté avec laquelle
+            l’administration traite ces missionnés. Cette fois-ci donc, hors de question d’être à nouveau pigeonnés : <a
+                href="http://www.sncl.fr/1/nos_dossiers_614158.html">le SNCL
+                fait le point avec vous sur les strictes obligations réglementaires et vous explique comment préparer votre
+                (très
+                probable) futur dossier de réclamation !</a> </p>
+    </div>
+    <hr>
+
+    <!--Segunda hoja-->
+    <div class="hoja-2">
+        <h3>Correction du bac, rémunération à la carte…</h3>
+        <p>Les corrections des copies des épreuves de spécialité ont apporté leur lot de surprise pour les collègues qui ont pu
+            constater avec étonnement une différence de rémunération d’une discipline à l’autre, au sein d’une même académie ou
+            dans des académies différentes ! Serions-nous déjà en avance sur le programme du Président de la République et sa
+            rémunération à la carte ? A moins qu’il ne s’agisse de devancer les préconisations du récent rapport sénatorial
+            encourageant à « rémunérer différemment les professeurs » en fonction du caractère plus ou moins recherché de leur
+            discipline… <a href="https://www.facebook.com/SNCLFAEN">Le SNCL a creusé la question pour vous.</a></p>
+    
+    </div>
+    <hr>
+
+    <!--Tercer hoja-->
+    <div class="hoja-3">
+        <h3>Mutations intra-académiques : le recours, c’est maintenant</h3>
+        <p>Le mouvement intra académique 2022 est le troisième mouvement s'appuyant sur les nouvelles lignes directrices de
+            gestion (LDG). Autrement dit, c’est le troisième mouvement sans commissions paritaires pour l’encadrer : des
+            commissions où de nombreuses erreurs étaient pourtant corrigées et où les syndicats pouvaient vérifier la bonne
+            marche des opérations…
+            Mais nous ne nous avouons pas pour autant vaincus : les collègues qui estiment avoir été lésés par les résultats de
+            ce mouvement opaque peuvent saisir le SNCL, <a href="http://www.sncl.fr/">qui vous explique comment constituer votre recours.</a> 
+        </p>
+    </div>    
+    <hr>
+
+    <!--Cuarta hoja-->
+    <div class="hoja-4">
+        <h3>Résultats du bac : trafic de notes en approche</h3>
+        <p>Le phénomène est national, bien que variant d’une académie et d’une discipline à l’autre : les services rectoraux
+            semblent avoir procédé à une opération de gonflage massif des notes attribuées par les correcteurs des épreuves de
+            spécialité du bac lors de la session de mai dernier. 1, 2, 3 voire 4 points de plus attribués parfois aux candidats,
+            sans concertation, sans même que les professeurs concernés en soient avertis ! <a href="http://sncl.fr/1/resultats_du_bac_trafic_de_notes_en_approche_3281011.html">Le SNCL appelle à la résistance et organise une pétition en ligne.</a> 
+        </p>
+    </div>
+    <hr>
+
+    <div class="hoja-5">
+        <h3>SE SYNDIQUER POUR CONNAITRE SES DROITS :</h3>
+        <p>Être syndiqués, c’est d’abord ne plus être seuls et vulnérables face à
+            l’administration et sa hiérarchie : à l’heure où les pressions et les
+            harcèlements se multiplient, où les services rectoraux rechignent à
+            reconnaitre vos droits, <b>un représentant syndical est un interlocuteur de
+            confiance</b> et un médiateur dans les situations de conflit.
+        </p>
+        <h4 style="color:orange">Adhérez maintenant, vous êtes couverts pour toute l’année scolaire à venir !</h4>
+        <p>Les collègues adhérant au syndicat dès à présent resterons adhérents du SNCL jusqu’au 31 août 2023. Profitez-en, en plus le SNCL a baissé ses tarifs !</p>
+        <br>
+
+        <div class="elboton">
+            <a href="http://sncl.fr/1/adherer_au_sncl_1383618.html">
+                <button class="botonera">Adhésion en ligne ici<br>
+                    (-66% remboursés sur vos impôts)</button>
+            </a>
+        </div>
+        
+        <div class="imz">
+            <ul class="imz_uno">
+                <li><img src="Email.png" alt=""><a href="mailto:communication@sncl.fr"> communication@sncl.fr</a></li>
+                <li><img src="Telephone.png" alt=""><a href="tel:0951981942"> 09.51.98.19.42</a></li>
+                <li><img src="Map_Icon.png" alt=""><a
+                        href="https://www.google.com.mx/maps/place/13+Av.+de+Taillebourg,+75011+Paris,+Francia/@48.8501979,2.3959187,17z/data=!3m1!4b1!4m5!3m4!1s0x47e672772cfa0731:0x595b2d70f9c7c288!8m2!3d48.8501926!4d2.3981166"> 13 avenue de Taillebourg,75011 PARIS
+                        </a></li>
+                <li><img src="web.png" alt=""><a href="http://sncl.fr/"> sncl.fr</p></a></li>
+            </ul>
+        </div>
+        <!-- <div class="iconos">
+            <ul class="ul_uno">
+                <li><i class="iconos fa-solid fa-at"></i><a href="mailto:communication@sncl.fr"> communication@sncl.fr</a></li>
+                <li><i class="iconos fa-solid fa-phone"></i><a href="tel:0951981942"> 09.51.98.19.42</a></li>
+                <li><i class="iconos fa-solid fa-location-dot"></i><a href="https://www.google.com.mx/maps/place/13+Av.+de+Taillebourg,+75011+Paris,+Francia/@48.8501979,2.3959187,17z/data=!3m1!4b1!4m5!3m4!1s0x47e672772cfa0731:0x595b2d70f9c7c288!8m2!3d48.8501926!4d2.3981166"> 13 avenue de Taillebourg,75011 PARIS</a></li>
+                <li><i class="iconos fa-solid fa-globe"></i><a href="http://sncl.fr/"> sncl.fr</a></li>
+            </ul>
+        </div> -->
+
+        <div class="ultima_lista">
+            <li>Suivi personnalisé de votre parcours professionnel</li>
+            <li>Avis et assistance juridique dans les situations de conflit</li>
+            <li>Information constante, académique comme nationale</li>
+        </div> 
+
+
+    </div>
+    <hr>
+
+    <!--Quinta hoja-->
+    <div class="hoja-6">
+        <div class="cover_img">
+            <img class="cover" src="Adherer.jpg" alt="cover">
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="finale">
+        <div class="para_finale">
+            <p class="pendejada"><a style="color:white" href="http://sncl.fr/">Syndicat National des Collèges et des Lycées</a></p>
+        </div>
+
+        <div class="logos_redes">
+            <a href="https://www.facebook.com/SNCLFAEN/"><i class="fa-color1 fa-brands fa-facebook fa-1x"></i></a>
+            <a href="https://twitter.com/SNCLFAEN"><i class="fa-color2 fa-brands fa-twitter fa-1x"></i></a>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </body>
+</html>
